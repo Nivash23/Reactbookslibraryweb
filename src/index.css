@@ -1,0 +1,208 @@
+*{
+    margin:0px;
+    border:0px;
+    font-family: sans-serif;
+    padding:0px;
+}
+:root{
+    --brownwhite:#FBDB93;
+    --lightwhite:#FF7D29;
+    --white:#B6B09F;
+}
+#wholecontainer{
+    width:100vw;
+    height:100%;
+    
+    background: linear-gradient(to right,rgb(71, 71, 71),rgb(28, 27, 27));
+    
+}
+.homecontainer{
+    background-image: url(../images/pexels-olenkabohovyk-3646172.jpg);
+    background-size: cover;
+    background-position: center;
+    height:85vh;
+    color:var(--brownwhite);
+    padding:1rem;
+}
+#nav{
+    display: flex;
+}
+#nav #logo{
+    flex:5;
+    font-size:1.5rem;
+    min-width: 10rem;
+    font-weight: bold;
+}
+#nav .menu{
+   flex:1;
+   /* min-width: 5rem; */
+   font-weight: bold;
+   cursor: pointer;
+   font-size: 1.2rem;
+}
+.menu:hover{
+    color:white;
+}
+#innercontent{
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    /* color: var(--lightwhite); */
+}
+#wholebrowse{
+   height:100%;
+   /* background-color: rgb(87, 143, 193); */
+    
+}
+#browsecontainer{
+    color:white;
+    display: flex;
+    justify-content: center;
+    /* height:100%; */
+    width:100%;
+    /* align-items:center; */
+    /* background-color: #FBDB93; */
+    /* padding:10px; */
+}
+#searchbar{
+    display: flex;
+    gap:1.5rem;
+}
+#searchbar input{
+    width:20rem;
+    font-size: 18px;
+    height:1.9rem;
+    border-radius:5px;
+    padding:5px;
+    outline: none;
+}
+#searchbar button{
+    width:5rem;
+    font-size: 16px;
+    font-weight: bold;
+    height:2.4rem;
+    background-color:var(--white) ;
+    border-radius: 5px;
+    cursor: pointer;
+    padding:5px;
+
+}
+#listcontainer{
+    color:honeydew;
+    margin:2rem;
+    height:100%;
+    background: linear-gradient(to right,rgb(71, 71, 71),rgb(28, 27, 27))
+}
+#listcontainer #title{
+    display: flex;
+    justify-content: center;
+}
+#listcontainer #lists{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(20rem,1fr));
+    gap: 2rem;
+    margin:2rem;
+    /* width:1200px; */
+    
+}
+#alllistcontainer{
+    color:honeydew;
+    /* margin:2rem; */
+    /* height:100%; */
+    background: linear-gradient(to right,rgb(71, 71, 71),rgb(28, 27, 27));
+    margin-top: 2rem;
+
+    
+    /* width:1200px; */
+}
+#alllistcontainer #title{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size:1.2rem;
+}
+#alllistcontainer #Alllists{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(20rem,1fr));
+    gap: 2rem;
+    padding: 30px;
+    height:100%;
+    /* width:1200px; */
+    
+}
+#bookcontainer{
+    width:100%;
+    background-color:var(--white);
+    color:black;
+    height:23rem;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+#bookcontainer img{
+    width:100%;
+    height:15rem;
+}
+#bookcontainer div{
+    margin: 10px;
+}
+#bookdetailscontainer{
+    width:100vw;
+    height:100vh;
+    color: rgb(193, 177, 154);
+    /* text-align: center; */
+}
+#bookdetailscontainer img{
+    width:90rem;
+    height:25rem;
+    margin:1.5rem 1.5rem 1.5rem 1.5rem;
+}
+#AddFormcontainer{
+    width:500px;
+    height:600px;
+    background-color: var(--white);
+    position: fixed;
+    z-index: 2;
+    margin: -1100px 0px 0px 400px;
+    padding:20px;
+    border-radius: 10px;
+
+}
+#AddFormcontainer > div{
+    margin:1.5rem;
+    display: flex;
+}
+#AddFormcontainer input{
+    width:14rem;
+    height:1.6rem;
+    padding:5px;
+    font-size: 1rem;
+    outline:none;
+    border-radius: 7px;
+
+}
+#AddFormcontainer .label{
+    width:9rem;
+    height:1.6rem;
+    text-align: center;
+    padding-top: 5px;
+    font-weight: bold;
+    /* padding:5px; */
+
+}
+#AddFormcontainer button{
+    width:8rem;
+    height:2.4rem;
+    font-weight: bold;
+    /* text-align: center; */
+    margin-left: 200px;
+    background-color: #FFB823;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 1rem;
+
+}
+/* #welcomemsg{
+} */
